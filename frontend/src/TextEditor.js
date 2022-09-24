@@ -26,9 +26,9 @@ export const TextEditor = () => {
     }
   }, [])
 
-  useEffect(() =>{
-    quill.on('text-change', (delta, oldDelta, source))
-  })
+  // useEffect(() =>{
+  //   quill.on('text-change', (delta, oldDelta, source))
+  // })
 
   const wrappwerRef = useCallback(wrapper => {
     if (wrapper == null) return
