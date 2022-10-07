@@ -21,7 +21,7 @@ export const TextEditor = () => {
   const { id: documentId } = useParams()
 
   useEffect(() => {
-    const s = io('http://localhost:3001')
+    const s = io('https://fab-docs.herokuapp.com/')
     setSocket(s)
     return () => {
       s.disconnect()
